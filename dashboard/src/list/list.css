@@ -1,0 +1,8 @@
+html{
+    padding: 15px;
+}
+a{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
