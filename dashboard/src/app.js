@@ -1,6 +1,6 @@
 import './app.css';
 
-export default class AppCtrl {
+class AppCtrl {
     constructor() {
         var appVm = this;
         appVm.title = 'Dashboard';
@@ -8,6 +8,4 @@ export default class AppCtrl {
 }
 
 // Example of injecting dependencies
-//AppCtrl.$inject = ['UserService'];
-
-//////
+export default AppCtrl;

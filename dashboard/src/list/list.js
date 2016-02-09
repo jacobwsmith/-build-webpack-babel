@@ -1,16 +1,16 @@
 import './list.css';
 
 class ListCtrl {
-    constructor($scope, DataService) {
+    constructor($scope, DataFactory) {
         var listVm = this;
         listVm.title = 'List';
         listVm.clickMe = clickMe;
-        listVm.loaded = DataService.loaded;
+        listVm.loaded = DataFactory.loaded;
     }
 }
 
 // Example of injecting dependencies
-ListCtrl.$inject = ['$scope', 'DataService'];
+ListCtrl.$inject = ['$scope', 'DataFactory'];
 export default ListCtrl;
 
 //////

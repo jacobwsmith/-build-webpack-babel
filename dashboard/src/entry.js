@@ -1,7 +1,9 @@
 import 'normalize.css';
 
 import * as angular from 'angular';
-import DataService from './data-service/data-service';
+
+//import DataService from './data-service/data-service';
+import DataFactory from './data-factory/data-factory';
 import AppCtrl from './app';
 import SummaryCtrl from './summary/summary';
 import ListCtrl from './list/list';
@@ -17,7 +19,9 @@ document.getElementsByTagName('body')[0].appendChild(div);
 
 angular
 	.module('app', [foo])
+    .factory('DataFactory', DataFactory)
 	.controller('AppCtrl', AppCtrl)
-    .service('DataService', DataService)
+    // .service('DataService', DataService)
+    
 	.controller('SummaryCtrl', SummaryCtrl)
 	.controller('ListCtrl', ListCtrl);
